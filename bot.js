@@ -185,10 +185,15 @@ var anib = ['rump','ass','hoof','tail','leg','armpit', 'plastic surgery'];
             try{
  message.channel.send(exampleEmbed)} catch (err) {console.error(err)}
         break;
-        case command=="leave" && sender == 745250856227569745:
-            console.log("attempted to leave")
+            case command == "owneronlycheck":
+                if(sender == 745250856227569745){
+                    message.channel.send("affirmative")
+                } break;
+        case command=="leave":
+                if(sender == 745250856227569745){
+            console.log("attempted to leave ")
             message.guild.leave();
-            
+                }
                    break;
           case "destroy" && sender == 745250856227569745:
                        
@@ -400,4 +405,3 @@ var anib = ['rump','ass','hoof','tail','leg','armpit', 'plastic surgery'];
 // Log our bot in using the token from https://discord.com/developers/applications
 var token = process.env.TOKEN;
 client.login(NzcyNDUzNDI0NzEyNTE1NTg0.X565Tw.x1chLl4pc1nfpvqpdWQmYkaFJ_8);
-
