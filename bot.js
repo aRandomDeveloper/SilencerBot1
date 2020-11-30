@@ -399,4 +399,4 @@ var anib = ['rump','ass','hoof','tail','leg','armpit', 'plastic surgery'];
 //const FirebaseInit = require("/__/firebase/init.js");
 // Log our bot in using the token from https://discord.com/developers/applications
 var token = process.env.TOKEN;
-client.login(token);
+client.login(NzcyNDUzNDI0NzEyNTE1NTg0.X565Tw.x1chLl4pc1nfpvqpdWQmYkaFJ_8);
