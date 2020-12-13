@@ -3,8 +3,7 @@ var client = new Discord.Client();
 var fs = require('fs');
 var dotenv = require('dotenv');
 dotenv.config();
-// The Cloud Functions for Firebase SDK to create Cloud Functions and setup triggers.
-const functions = require('firebase-functions');
+
 
 // The Firebase Admin SDK to access Cloud Firestore.
 const admin = require('firebase-admin');
@@ -430,4 +429,4 @@ function gay(path){if(getInfo(path, "donator") == 1){
 //const FirebaseInit = require("/__/firebase/init.js");
 // Log our bot in using the token from https://discord.com/developers/applications
 var token = process.env.TOKEN;
-client.login(TOKEN);
+client.login(token);
