@@ -7,10 +7,8 @@
   "author": "Silence#6455 aka Shane Yeo",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^11.2.1",
+    "discord.js": "^11.6.4",
     "dotenv": "^8.2.0",
-    "firebase": "^8.2.0",
-    "firebase-admin": "^9.4.2",
     "jquery": "^3.5.1"
   }
 }
