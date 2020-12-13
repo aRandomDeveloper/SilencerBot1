@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
    "name": "SilencerBot",
    "version": "v1.0.0",
    "description": "A bot that tracks balance",
@@ -16,4 +17,29 @@
       "discord.js": "^11.2.1",
       "dotenv": "^8.2.0"
    }
+=======
+  "name": "SilencerBot",
+  "version": "1.0.0",
+  "description": "A bot that tracks balance",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "12",
+    "npm": "*"
+  },
+  "author": "Silence#6455 aka Shane Yeo",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "dotenv": "^8.2.0",
+    "firebase-admin": "^9.4.2",
+    "firebase-functions": "^3.12.0",
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "keywords": []
+>>>>>>> a5517667248b1a8ea68c4231f97e9d687c0cd80d
 }
