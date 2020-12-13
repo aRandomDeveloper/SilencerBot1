@@ -1,15 +1,15 @@
 { 
   "engines": {
     "node": "12",
-    "npm": "*"
-    
+    "npm": "*",
+    "discord.js": "^12.0.0"
   },
   "author": "Silence#6455 aka Shane Yeo",
   "license": "MIT",
   "dependencies": {
     "discord.js": "^11.2.1",
     "dotenv": "^8.2.0",
-    "jquery": "^3.5.1",
+    "jquery": "^3.5.1"
   },
   
 
