@@ -4,10 +4,8 @@ var fs = require('fs');
 var dotenv = require('dotenv');
 dotenv.config();
 
-
-
 client.on('ready', function(){console.log("Logged in!")
-                             client.user.setActivity('Sil help to suffer', { type: 'PLAYING' })
+                           client.user.setActivity('Sil help to suffer', { type: 'PLAYING' })
  
  
 });
