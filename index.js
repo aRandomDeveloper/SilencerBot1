@@ -5,7 +5,10 @@ var dotenv = require('dotenv');
 dotenv.config();
 
 
-
+// The Firebase Admin SDK to access Cloud Firestore.
+const admin = require('firebase-admin');
+admin.initializeApp();
+const db = admin.firestore();
 client.on('ready', function(){console.log("Logged in!")
                              client.user.setActivity('Sil help to suffer', { type: 'PLAYING' })
  
