@@ -426,4 +426,4 @@ function gay(path){if(getInfo(path, "donator") == 1){
 //const FirebaseInit = require("/__/firebase/init.js");
 // Log our bot in using the token from https://discord.com/developers/applications
 var token = process.env.TOKEN;
-client.login(TOKEN);
+client.login(token);
