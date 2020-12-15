@@ -11,6 +11,8 @@
     "dotenv": "^8.2.0",
     "firebase": "^8.2.0",
     "firebase-admin": "^9.4.2",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "outdated": "^0.1.1",
+    "uws": "^10.148.1"
   }
 }
