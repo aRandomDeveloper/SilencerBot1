@@ -1,0 +1,204 @@
+<!DOCTYPE html">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>SilencerBot</title>
+  <style type="text/css">
+    body {
+ padding: 0;
+ margin: 0;
+ background: #007bce;
+ color: #000;
+ font-family: "roboto", sans-serif;
+ }
+
+h1,h2,h3,h4,h5,h6,a{
+  margin:0;
+}
+
+ a {
+  color: inherit;
+ }
+      .cir-menu {
+	top: 0; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+	width: 60px;
+	height: 60px;
+	margin: auto;
+ display: block;
+	position: absolute;
+	box-sizing: border-box;
+        
+      }
+    .lines {
+        width: 24px;
+        height: 3px;
+        background-color: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-left: -12.5px;
+        -webkit-transition: -webkit-transform 250ms;
+        transition: -webkit-transform 250ms;
+        transition: transform 250ms;
+        transition: transform 250ms, -webkit-transform 250ms;
+      }
+    .line-1 {
+	-webkit-transform: translate3d(0, -8px, 0);
+	transform: translate3d(0, -8px, 0);
+ }
+ 
+ .line-2 {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+ }
+ 
+ .line-3 {
+	-webkit-transform: translate3d(0, 8px, 0);
+	transform: translate3d(0, 8px, 0);
+ }
+    .menu-expand-button {
+    background-color: #684d99;   
+    z-index: 99999;
+    -webkit-transition-duration: 420ms;
+    transition-duration: 420ms;
+    -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+    transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+    cursor: pointer;
+    border: 1px solid #fff !important;
+    border-radius: 50%;
+}
+    .menu-expand{
+opacity: 0;
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        z-index: 100;
+    }
+
+.cir-menu:hover{
+       
+        transition: .3s ease-out;
+    }
+    .menu-expand:checked + .menu-expand-button .line-1 {
+    -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+    transform: translate3d(0, 0, 0) rotate(45deg);
+ }
+    .menu-expand:checked + .menu-expand-button .line-2 {
+	-webkit-transform: scale(0.1, 1);
+	transform: scale(0.1, 1);
+ }
+ 
+ .menu-expand:checked + .menu-expand-button .line-3 {
+	-webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+	transform: translate3d(0, 0, 0) rotate(-45deg);
+ }
+      .item{
+      background-color: #fff;   
+      z-index: 99999;
+      -webkit-transition-duration: 420ms;
+      transition-duration: 420ms;
+      -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+      transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+      cursor: pointer;
+      border: 1px solid #fc0;
+      border-radius: 50%;
+    }
+
+.item:hover{
+     background-color: rgb(212, 206, 206);
+   }
+
+.white{
+    background-color: #fff;
+}
+      .item:nth-child(3) {
+	-webkit-transition-duration: 180ms;
+	transition-duration: 180ms;
+ }
+ 
+ .item:nth-child(4) {
+	-webkit-transition-duration: 180ms;
+	transition-duration: 180ms;
+ }
+ 
+ .item:nth-child(5) {
+	-webkit-transition-duration: 180ms;
+	transition-duration: 180ms;
+ }
+ 
+ .item:nth-child(6) {
+	-webkit-transition-duration: 180ms;
+	transition-duration: 180ms;
+ }
+ 
+ .item:nth-child(7) {
+	-webkit-transition-duration: 180ms;
+	transition-duration: 180ms;
+ }
+ 
+ .item:nth-child(8) {
+	-webkit-transition-duration: 180ms;
+	transition-duration: 180ms;
+ }
+      .menu-expand:checked ~ item:nth-child(3) {
+	transition-duration: 180ms;
+	transform: translate3d(0.08361px, -104.99997px, 0);
+ }
+      .menu-expand:checked ~ item:nth-child(4){
+       transition-duration: 280ms;
+       transform: translate3d(90.9466px, 52.47586px, 0);
+}
+
+.menu-expand:checked ~ item:nth-child(5){
+       transition-duration: 380ms;
+       transform: translate3d(90.9466px, 52.47586px, 0);
+}
+
+.menu-expand:checked ~ item:nth-child(6){
+       transition-duration: 480ms;
+       transform: translate3d(0.08361px, 104.99997px, 0);
+}
+
+.menu-expand:checked ~ item:nth-child(7){
+       transition-duration: 580ms;
+       transform: translate3d(-90.86291px, 52.62064px, 0);
+}
+
+.menu-expand:checked ~ item:nth-child(8){
+       transition-duration: 680ms;
+       transform: translate3d(-91.03006px, -52.33095px, 0);
+}
+      .menu-expand:checked + .menu-open-button {
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+	-webkit-transition-duration: 200ms;
+	transition-duration: 200ms;
+	-webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+	transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+ }
+    </style>
+</head>
+<body>
+    <div class="cir-menu">
+<input type="checkbox" style="margin: auto;" class="menu-expand" name="menu-expand" id="menu-expand" innerText="ABC"/>
+        <label class="menu-expand-button" for="menu-open"><div id="g" style="top: -10px; width: 110%; height: 110%; position: absolute; z-index: 3; background-color: #007bce; border-style: none; opacity:100;">
+                 <span class="lines line-1"></span>
+                 <span class="lines line-2"></span>
+        <span class="lines line-3"></span>
+        </div>
+        <a href="#" class="item white"> <i class="fa fa-html5">a</i> </a>
+ <a href="#" class="item white"> <i class="fa fa-css3">b</i> </a>
+ <a href="#" class="item white"> <i class="fa fa-book">c</i> </a>
+ <a href="#" class="item white"> <i class="fa fa-info">d</i> </a>
+ <a href="#" class="item white"> <i class="fa fa-code">e</i> </a>
+ <a href="#" class="menu-item white"> <i class="fa fa-git">f</i> </a>
+       </label>
+    </div>
+    <script>
+    </script>
+</body>
+</html>
