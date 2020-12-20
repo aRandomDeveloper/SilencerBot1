@@ -12,7 +12,7 @@ const fileFunc = require(fPath + "fsFunc.js");
 
 dotenv.config();
 //--------------------------------ONE TIME TOGGLE FOR BETA------------------------------------
-var betaTesting = true;
+var betaTesting = false;
 //--------------------------------------------------------------------------------------------
 var PREFIX;
 var token;
